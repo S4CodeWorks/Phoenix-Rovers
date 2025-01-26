@@ -1,0 +1,184 @@
+.estatuto-container {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.estatuto-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.estatuto-background {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  opacity: 0.8;
+}
+
+.estatuto-header {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.estatuto-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--text-color), var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.estatuto-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.estatuto-content {
+  background: var(--primary-light);
+  padding: 4rem 2rem;
+}
+
+.estatuto-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 4rem;
+}
+
+.estatuto-sidebar {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--accent-color);
+}
+
+.sidebar-menu {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.sidebar-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s;
+  display: block;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sidebar-link:hover {
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.estatuto-text {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 3rem;
+}
+
+.capitulo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.capitulo-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.capitulo-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+.artigo {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+}
+
+.artigo-title {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.artigo p, .artigo ol {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.artigo ol {
+  padding-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .estatuto-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .estatuto-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .estatuto-hero {
+    min-height: 30vh;
+  }
+
+  .estatuto-text {
+    padding: 1.5rem;
+  }
+
+  .artigo {
+    padding: 1rem;
+  }
+}

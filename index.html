@@ -1,0 +1,328 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Rovers | Página oficial</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="hero.css">
+  <script src="menu.js" type="module" defer></script>
+  <script src="hero.js" type="module" defer></script>
+  <!-- Twitch Embed Script -->
+  <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+  <script src="broadcast.js" type="module" defer></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23111111'/%3E%3Cpath d='M50 20c16.569 0 30 13.431 30 30 0 16.569-13.431 30-30 30-16.569 0-30-13.431-30-30 0-16.569 13.431-30 30-30zm0 5c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25z' fill='%23e63946'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-container">
+        <div class="logo-wrapper">
+          <img src="PhoenixRovers.png" alt="Phoenix Rovers Logo" class="club-logo" width="60" height="60">
+          <div class="logo-glow"></div>
+        </div>
+        <h1 class="club-name">
+          <span class="club-prefix">PHOENIX</span>
+          <span class="club-main">ROVERS</span>
+        </h1>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <div class="menu-toggle-wrapper">
+          <span class="toggle-line line-1"></span>
+          <span class="toggle-line line-2"></span>
+          <span class="toggle-line line-3"></span>
+          <div class="menu-ripple"></div>
+        </div>
+      </button>
+    </div>
+    
+    <nav class="main-nav">
+      <div class="menu-container">
+        <div class="menu-background"></div>
+        <div class="menu-items-wrapper">
+          <div class="menu-item">
+            <div class="menu-heading">
+              <span class="heading-text">Elenco</span>
+              <span class="heading-icon"></span>
+            </div>
+            <div class="submenu">
+              <a href="https://example.com/players" class="submenu-item">
+                <span class="item-icon players-icon"></span>
+                <span class="item-text">Mayor</span>
+                <span class="item-description">Confira nosso elenco principal </span>
+              </a>
+              <a href="https://example.com/staff" class="submenu-item">
+                <span class="item-icon staff-icon"></span>
+                <span class="item-text">Academy</span>
+                <span class="item-description">Confira nossa base</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="header-backdrop"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-background">
+        <div class="overlay"></div>
+        <div class="pattern"></div>
+      </div>
+      <div class="hero-content">
+        <div class="welcome-text">
+          <div class="welcome-animation">
+            <span class="text-accent">EST. 2025</span>
+            <h2 class="club-title">Phoenix Rovers</h2>
+            <p class="tagline">Boas vindas!</p>
+          </div>
+          <div class="cta-container">
+            <a href="https://example.com/tickets" class="cta-button primary">
+              <span class="button-text">Baixe nosso APP!</span>
+              <svg class="button-icon" viewBox="0 0 24 24">
+                <path d="M4 15h2v3h12v-3h2v3c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2zm8-12.59L5.41 8H9v12h6V8h3.59L12 2.41z"/>
+              </svg>
+            </a>
+            <a href="https://example.com/membership" class="cta-button secondary">
+              <span class="button-text">Torne-se um jogador</span>
+              <svg class="button-icon" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-number" data-value="0">0</div>
+            <div class="stat-label">VITÓRIAS</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-value="0">0</div>
+            <div class="stat-label">EMPATES</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-value="0">0</div>
+            <div class="stat-label">DERROTAS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="matches-section">
+      <div class="matches-container">
+        <div class="featured-match">
+          <div class="live-indicator">
+            <span class="pulse"></span>
+            PRÓXIMO JOGO
+          </div>
+          <div class="featured-match-card">
+            <div class="match-status to-be-defined">A DEFINIR</div>
+            <div class="featured-match-content">
+              <div class="team home">
+                <span class="team-name">Phoenix Rovers</span>
+                <div class="team-logo">
+                  <img src="PhoenixRovers.png" alt="Phoenix Rovers">
+                </div>
+                <span class="score">PHX</span>
+              </div>
+              
+              <div class="match-details">
+                <div class="match-time">Data a definir</div>
+                <div class="match-competition">Amistoso</div>
+              </div>
+              
+              <div class="team away">
+                <span class="score">0</span>
+                <div class="team-logo">
+                  <img src="BackgroundEraser_20250126_132648313.png" alt="Adversário">
+                </div>
+                <span class="team-name">NGR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="live-broadcast-container">
+          <div id="twitch-embed"></div>
+        </div>
+
+        <div class="section-title">
+          <h2 class="section-heading">Próximos Jogos</h2>
+          <p class="section-subheading">Acompanhe a agenda do Phoenix Rovers</p>
+        </div>
+        
+        <div class="matches-grid">
+          <!-- Match 1 -->
+          <div class="match-card">
+            <div class="match-content">
+              <div class="team home">
+                <span class="team-name">Phoenix Rovers</span>
+                <div class="team-logo">
+                  <img src="BackgroundEraser_20250122_010950564.png" alt="Phoenix Rovers">
+                </div>
+              </div>
+              
+              <div class="match-details">
+                <div class="match-date">A definir</div>
+                <div class="versus">VS</div>
+                <div class="match-competition">Amistoso</div>
+              </div>
+              
+              <div class="team away">
+                <div class="team-logo">
+                  <img src="opponent-placeholder.png" alt="Adversário">
+                </div>
+                <span class="team-name">A definir</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Match 2 -->
+          <div class="match-card">
+            <div class="match-content">
+              <div class="team home">
+                <span class="team-name">Phoenix Rovers</span>
+                <div class="team-logo">
+                  <img src="BackgroundEraser_20250122_010950564.png" alt="Phoenix Rovers">
+                </div>
+              </div>
+              
+              <div class="match-details">
+                <div class="match-date">A definir</div>
+                <div class="versus">VS</div>
+                <div class="match-competition">Amistoso</div>
+              </div>
+              
+              <div class="team away">
+                <div class="team-logo">
+                  <img src="opponent-placeholder.png" alt="Adversário">
+                </div>
+                <span class="team-name">A definir</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Match 3 -->
+          <div class="match-card">
+            <div class="match-content">
+              <div class="team home">
+                <span class="team-name">Phoenix Rovers</span>
+                <div class="team-logo">
+                  <img src="BackgroundEraser_20250122_010950564.png" alt="Phoenix Rovers">
+                </div>
+              </div>
+              
+              <div class="match-details">
+                <div class="match-date">A definir</div>
+                <div class="versus">VS</div>
+                <div class="match-competition">Amistoso</div>
+              </div>
+              
+              <div class="team away">
+                <div class="team-logo">
+                  <img src="opponent-placeholder.png" alt="Adversário">
+                </div>
+                <span class="team-name">A definir</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer-pattern"></div>
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="PhoenixRovers.png" alt="Phoenix Rovers">
+          <span class="footer-logo-text">Phoenix Rovers</span>
+        </div>
+        <p class="footer-description">
+          <strong>Phoenix Rovers M.C</strong> é uma marca registrada. Todos os direitos sobre os conteúdos e materiais relacionados à marca são reservados. A reprodução, distribuição ou modificação de qualquer parte deste conteúdo sem a devida autorização por parte do titular dos direitos é estritamente proibida.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/phoenixrovers.mc" class="social-link" aria-label="Instagram">
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@phoenixrovers.mc" class="social-link" aria-label="TikTok">
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/+5554996378496" class="social-link" aria-label="WhatsApp">
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3 class="footer-title">Links Rápidos</h3>
+        <div class="footer-links">
+          <a href="https://example.com/about" class="footer-link">
+            <svg class="footer-link-icon" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            Sobre o Clube
+          </a>
+          <a href="https://example.com/news" class="footer-link">
+            <svg class="footer-link-icon" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+            Aplicativo
+          </a>
+          <a href="estatuto.html" class="footer-link">
+            <svg class="footer-link-icon" viewBox="0 0 24 24">
+              <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+            Estatuto
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3 class="footer-title">Departamentos</h3>
+        <div class="footer-links">
+          <a href="https://example.com/academy" class="footer-link">Mayor</a>
+          <a href="https://example.com/foundation" class="footer-link">Academy</a>
+          <a href="https://example.com/store" class="footer-link">Publicidades</a>
+          <a href="https://example.com/partners" class="footer-link">Parceiros</a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h3 class="footer-title">Contato</h3>
+        <div class="footer-contact">
+          <div class="contact-item">
+          </div>
+          <div class="contact-item">
+            <a href="mailto:phoenixrovers.mc@gmail.com">
+              <svg class="contact-icon" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>phoenixrovers.mc@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <a href="https://wa.me/5554996378496"> 
+            <svg class="contact-icon" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span>+55 54 9637-8496</span> 
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Phoenix Rovers. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
